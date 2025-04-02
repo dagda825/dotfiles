@@ -1,0 +1,1 @@
+/home/jon/dotfiles/bash_aliases

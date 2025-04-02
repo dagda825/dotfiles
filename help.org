@@ -1,0 +1,64 @@
+* Beginner Keybindings
+** What do the Keys mean again?
+C - press (and hold) the Control button
+M - press (and hold) the ALT     button
+S - press (and hold) the SHIFT   button
+
+** Buffer control
+
+C-x C-f finds (opens) a file and opens it into a new buffer
+C-x b   switches to a buffer
+C-x C-b opens a buffer list and let's you choose one
+C-x k   closes (kills) the current buffer. if the buffer contains
+        unsaved changes, emacs prompts you to save them
+C-x s   saves the contents of the buffer
+
+** Window Control
+
+C-x 0   This deletes the current window. if you only have one
+        window open, it will not close it.
+C-x 1   This deletes all other open windows except the one with
+        the cursor on it.
+C-x O   Note: that's the OH letter, not Zero. Cycles through
+        the windows.
+C-x 2   split window below the current one
+C-x 3   split window to the right
+C-x ^   Increase the height of the current window
+C-x {   decrease the width of the current window
+C-x }   increase the width of the current window
+*** If you have winmove installed:
+Note: RA,LA, UA and DA are the arrow keys. Left Right Up Down
+S- RA   go to the window to right
+S- LA   go to the window to the left
+S- UA   go to the window above
+S- DA   go to the window below
+
+** dired is indespensible
+C-x d   opens dired
+C-x C-f finds (find file on a directory)
+      n go down one line on the dired list
+      p go up   one line on the dired list
+      
+    RET open the file or directory
+      g refresh the dired buffer list
+      o open the file or directory under the cursor
+        into a new window
+    C-o opens the file under the cursor in the current
+        window without switching to it.
+*** file operations
+      noob note: many of these opertions also work on
+                 the buffer list. Probably a LOT more
+		 lists. Maybe ALL lists.
+
+      d flags the file or directory for deletion. BEWARE
+      u unflags the file or directory for deletion.
+      U unflags all marked files or directories for deletion
+      x deletes all files or directories flagged for
+        deletion
+      C copies the file or directory
+      R renames the file or directory
+      m marks the file or directory
+      U unmarks the file or directory
+      + creates a new directory
+      
+      
