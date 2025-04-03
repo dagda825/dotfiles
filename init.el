@@ -1,5 +1,25 @@
 ;; I have no idea!
 (cua-mode 1)
+
+;; add my help file into a buffer at start.
+(defun my-open-help-org ()
+  "Opens the help.org file in a buffer."
+  (interactive)
+  (find-file-other-window "~/dotfiles/help.org")
+  (org-mode))
+
+;; set a hot key to show my help file
+(global-set-key (kbd "C-c h") 'my-open-help-org)
+
+
+;; Add my help file to a side window, 1/3 of the frame real estate.
+(setq display-buffer-alist
+      (cons '("\\help.org\\'" ; Match buffer name
+              (display-buffer-in-side-window) ; Action to take
+              (side . right) ; Position of side window
+              (window-width . 0.33)) ; Width as a fraction of screen
+            display-buffer-alist))
+
 (setq org-todo-keywords
       '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))
 ;; attempting to install geiser for chicken, a scheme implementation.
@@ -19,13 +39,6 @@
  )
 ;; Add windmove keybindings
 (windmove-default-keybindings)
-;; Add my help file to a side window, 1/3 of the frame real estate.
-(setq display-buffer-alist
-      (cons '("\\help.org\\'" ; Match buffer name
-              (display-buffer-in-side-window) ; Action to take
-              (side . right) ; Position of side window
-              (window-width . 0.33)) ; Width as a fraction of screen
-            display-buffer-alist))
 ;; makes .js files automatically use js2-mode
 ;; i think.
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))

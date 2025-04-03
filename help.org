@@ -1,5 +1,5 @@
 * Beginner Keybindings
-** What do the Keys mean again?
+** What do the C S M etc Keys mean again?
 C - press (and hold) the Control button
 M - press (and hold) the ALT     button
 S - press (and hold) the SHIFT   button

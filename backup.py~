@@ -4,7 +4,7 @@ import subprocess
 
 dotfiles_dir = os.path.expanduser("~/dotfiles")
 old_dotfiles_dir = os.path.expanduser("~/dotfiles_old")
-files = ["bashrc", "zshrc", "bash_aliases"]
+files = ["bashrc", "zshrc", "bash_aliases", "init.el"]
 
 # Create dotfiles_old directory
 print(f"Creating {old_dotfiles_dir} for backup...")
