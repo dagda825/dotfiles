@@ -1,0 +1,39 @@
+# Temporary files and directories
+*.bak
+*.swp
+*.swo
+*.tmp
+*.log
+*.cache/
+*.DS_Store  # macOS specific
+__pycache__/ # Python specific
+
+# Backup files
+*~
+.#*
+*.old.*
+# Compiled files (adjust as needed)
+*.o
+*.class
+*.pyc
+
+# Sensitive information (avoid committing these)
+*.key
+*.pem
+*.pass
+*.secret
+
+# IDE specific files
+.idea/ # IntelliJ IDEA
+.vscode/ # VS Code
+.project
+.classpath
+
+# OS specific files
+.localized
+
+# Example: Exclude a specific directory
+#my-private-data/
+
+# Example: Exclude a specific file
+#my-secret-config.txt

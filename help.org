@@ -61,4 +61,11 @@ C-x C-f finds (find file on a directory)
       U unmarks the file or directory
       + creates a new directory
       
-      
+ 
+** Running a buffer
+
+M-x <name of buffer>
+
+** Search
+C - s search for a string forward through the document
+C - r search for a string backward through the document

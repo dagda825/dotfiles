@@ -9,7 +9,7 @@
   (org-mode))
 
 ;; set a hot key to show my help file
-(global-set-key (kbd "C-c h") 'my-open-help-org)
+(global-set-key (kbd "C-c C-c ?") 'my-open-help-org)
 
 
 ;; Add my help file to a side window, 1/3 of the frame real estate.
